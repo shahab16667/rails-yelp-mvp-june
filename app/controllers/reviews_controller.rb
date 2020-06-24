@@ -1,9 +1,13 @@
 class ReviewsController < ApplicationController
 
     def new 
-      @review = Review.create!
+      @review = Review.new
     end
 
+    # def create 
+    #     @review = Review.new(review_params)
+    #     @review
+    # end
 
     private 
 
